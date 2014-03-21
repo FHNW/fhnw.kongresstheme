@@ -1,0 +1,35 @@
+<div id="portal-globalnav-wrapper">
+    <tal:sections tal:define="portal_tabs view/portal_tabs"
+         tal:condition="portal_tabs"
+         i18n:domain="plone">
+        <h5 class="hiddenStructure" i18n:translate="heading_sections">Sections</h5>
+
+        <a href="#" class="toggleMenu" style="display: none;">
+            <div class="hiddenStructure">Menu</div>
+            <div class="patty"></div>
+            <div class="patty"></div>
+            <div class="patty"></div>
+        </a>
+
+        <ul id="portal-responsive-globalnav" 
+            tal:define="selected_tab python:view.selected_portal_tab"
+            ><tal:tabs tal:repeat="tab portal_tabs"
+            ><li tal:define="tid tab/id;
+                             subitems python:view.getTabObject(tabUrl = tab['url'], tabPath = tab.get('path'));
+                             item_clickable python:view.enable_parent_clickable or not subitems"
+                 tal:attributes="id string:portaltab-${tid};"
+                ><a href=""
+                   tal:content="tab/name"
+                   tal:attributes="href tab/url;
+                                   title tab/description|nothing;">
+                Tab Name
+                </a
+                ><tal:block tal:condition="subitems">
+                    <ul>
+                        <tal:subitems tal:replace="structure subitems">
+                            <tal:comment replace="nothing">Submenu</tal:comment>
+                        </tal:subitems>
+                    </ul>
+                </tal:block></li></tal:tabs></ul>
+    </tal:sections>
+</div>

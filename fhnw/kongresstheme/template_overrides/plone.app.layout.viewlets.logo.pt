@@ -1,0 +1,4 @@
+<div id="portal-logo">
+    <div tal:condition="exists:context/headertext"
+         tal:replace="structure context/headertext/text/output | context/headertext/getText">headertext</div>
+</div>

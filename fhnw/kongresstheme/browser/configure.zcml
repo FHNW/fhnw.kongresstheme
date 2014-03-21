@@ -1,0 +1,42 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:plone="http://namespaces.plone.org/plone"
+           i18n_domain="fhnw.kongresstheme">
+
+    <!--browser:resourceDirectory
+        name="on-media-query"
+        directory="on-media-query"
+        layer="..interfaces.ICustomTheme"
+        /-->
+
+    <browser:resourceDirectory
+        name="nivo-slider"
+        directory="nivo-slider"
+        layer="..interfaces.ICustomTheme"
+        />
+
+    <browser:resourceDirectory
+        name="responsive-menu"
+        directory="responsive-menu"
+        layer="..interfaces.ICustomTheme"
+        />
+
+    <browser:viewlet
+        name="fhnw.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        layer="..interfaces.ICustomTheme"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="fhnw.slider"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        template="slider.pt"
+        class=".slider.ImageSlider"
+        layer="..interfaces.ICustomTheme"
+        permission="zope2.View"
+        />
+
+
+</configure>

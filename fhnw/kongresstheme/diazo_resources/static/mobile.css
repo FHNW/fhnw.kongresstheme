@@ -1,0 +1,21 @@
+/* For devices with narrow screens, phones, tablets, etc. */
+
+#portal-column-one,
+#portal-column-two,
+#portal-column-content {
+	clear: both;
+	width: 97.75%;
+	margin-left: -98.875%;
+}
+#portal-globalnav-wrapper {
+    display: block;
+}
+#portal-logo {
+	margin: 0.25em;
+}
+.portletNavigationTree {
+	display: none;
+}
+#portal-footer {
+	padding: 0.75em;
+}

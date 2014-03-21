@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+    <!-- Register the import step -->
+    <genericsetup:importStep
+        name="fhnw.kongresstheme"
+        title="fhnw.kongresstheme default content importer"
+        description=""
+        handler="fhnw.kongresstheme.setuphandlers.setupVarious"
+        />
+
+</configure>

@@ -1,0 +1,16 @@
+<div id="head-slider-wrapper">
+	<div id="head-slider" class="slider-wrapper theme-default">
+		<!--h2>slider</h2-->
+    	<div id="slider" class="nivoSlider">
+            <tal:images repeat="image view">
+                    <img tal:define="image image/getObject;
+                                     scale image/@@images"
+                         tal:replace="structure python: scale.scale('image', width=960, height=190, direction='down').tag(css_class='newsImage')" />
+
+
+                <!--img tal:attributes="src string:${image/getPath}/image_large"-->
+
+            </tal:images>
+        </div>
+	</div>
+</div>

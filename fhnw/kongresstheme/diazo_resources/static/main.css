@@ -1,0 +1,388 @@
+/* Stylesheet for the 'ICustomTheme' Plone browser layer */
+
+html, body {
+    height: 100%;
+}
+#header-wrapper,
+#content-wrapper,
+#footer-wrapper,
+#head-slider {
+	margin: 0 auto;
+	max-width: 60em;
+}
+#outer-wrapper {
+    height: auto !important;
+    margin: 0 auto -11em;
+    min-height: 100%;
+}
+#inner-wrapper {
+    padding: 0 0 2em;
+}
+#push {
+    height: 11em;
+}
+#footer-background {
+    margin: 0;
+    background: #F3DB36;
+    height: 11em;
+}
+
+
+div.position-0  {
+    margin-left: -100%
+}
+
+div.width-1\3a 2 { width:    47.75%; } /* .width-1:2 */
+div.width-1\3a 4 { width:    22.75%; } /* .width-1:4 */
+div.width-3\3a 4 { width:    75%; } /* .width-3:4 */
+div.width-full   { width:    100%  }
+div.position-1\3a 4 {margin-left:    -75%;} /* .position-1:4 */
+div.position-1\3a 2 {margin-left:    -48.875%;} /* .position-1:2 */
+div.position-3\3a 4 {margin-left:    -23.875%;} /* .position-3:4 */
+
+#header-divider,
+#head-slider-wrapper {
+	border-top: 0.25em solid black;
+}
+
+
+/* @group Basics */
+
+body {
+    font: 100% 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background: White;
+    color: Black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Condensed','Helvetica Neue Condensed','Arial Narrow',sans-serif;
+    font-weight: bold;
+    color: Black;
+    line-height: 1.5em;
+}
+h1, h2 {
+    letter-spacing: 0;
+}
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.25em;
+}
+h3 {
+    font-size: 1.1em;
+}
+h4 {
+    font-size: 1.05em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.8em;
+}
+h2, h3, h4, h5, h6 {
+    color: #444;
+}
+h2 a, h3 a, h4 a {
+    border-bottom: none !important;
+}
+
+p {
+}
+
+a:link, a:visited {
+    color: #205c90;
+}
+a:focus img {
+    outline: thin dotted;
+}
+dt {
+    font-weight: bold;
+}
+input {
+    font-family: "Lucida Grande", Arial, FreeSans;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+sup,
+sub {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: 0.5ex;
+}
+
+/* @end */
+
+#portal-personaltools-wrapper {
+    margin-bottom: 0;
+    position: absolute;
+    top: 9.5em;
+    right: 0;
+}
+
+#portal-personaltools {
+    background: none repeat scroll 0 0 #E3E3E3;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+/*    border-radius: 0.5em;*/
+    float: right;
+    font-size: 80%;
+    padding: 0.25em 0.5em;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+#portal-personaltools dd {
+    bottom: 1.75em;
+    padding-top: 0.5em;
+    right: 0;
+}
+dl.actionMenu.activated dt {
+    border-top-right-radius: 0.5em;
+}
+dl.actionMenu.activated dd {
+    border-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0;
+    min-width: 100%;
+    position: absolute;
+    width: auto;
+}
+
+#portal-logo {
+    padding: 1em 0;
+    margin: 0;
+}
+#head-slider {
+    margin-bottom: 1.5em;
+}
+
+#portal-globalnav-wrapper {
+    display: none;
+    list-style-image: none;
+    position: relative;
+    z-index: 10;
+}
+
+#portal-column-one {
+    padding-top: 0.6em;
+}
+#content {
+	font-size: 88%;
+    margin: 0;
+}
+
+#content a:link,
+dl.portlet a:link {
+    color: #205C90;
+    border-bottom: 0;
+}
+
+#content a:visited,
+dl.portlet a:visited {
+    color: #205C90;
+    border-bottom: 0;
+}
+#content a:hover,
+dl.portlet a:hover {
+    background: #F3DB36;
+    color: #205C90 !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+}
+
+#content h1.documentFirstHeading {
+    border-bottom: 0.15em solid #000000;
+    margin: 0 0 0.5em 0;
+}
+
+#content .documentDescription, #content #description {
+    color: #000;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+/*table.plain td,
+table.plain th,
+table.listing td,
+table.listing th {
+    padding: 0.5em 1em 0.5em 0em;
+    vertical-align: top;
+    text-align: left;
+}
+*/
+
+table.invisible td,
+table.invisible th {
+    padding: 0.5em 1em 0.5em 0em;
+    vertical-align: top;
+    text-align: left;
+}
+#content table.invisible td p,
+#content table.invisible th p {
+    margin-bottom: 0;
+}
+
+
+/* @group Portlets */
+
+dl.portlet {
+    margin: 0 0 1em;
+    font-size: 90%;
+}
+dl.portletError {
+    background-color: #FFA500;
+}
+
+dl.portlet dt {
+    padding: 0.42em 1em;
+    background: #ddd;
+    line-height: normal;
+}
+dl.portlet dt.hiddenStructure {
+    padding: 0;
+}
+
+dl.portlet dt a:link,
+dl.portlet dt a:visited,
+dl.portlet dt a:hover {
+    color: black;
+    display: block;
+    border: none;
+}
+
+dl.portlet dd.portletItem,
+dl.portlet dd.portletFooter,
+dl.portletError dd {
+    padding: 1em;
+}
+
+.blockedPortlet .portletHeader {
+    border: 1px dashed #ddd;
+    margin: -1px;
+    background: none !important;
+}
+
+.blockedPortlet .portletHeader a {
+    color: #666;
+}
+
+.blockedPortlet .portletBlockedMessage {
+    color: white;
+    display: inline;
+}
+
+.portletItemDetails {
+    font-size: 85%;
+    padding-top: .5em;
+    line-height: 1.5em;
+    margin-left: 1em;
+    display: block;
+}
+
+#portlet-prefs a {
+    border: none;
+    line-height: 2em;
+}
+
+/* @end */
+
+
+/* @group Navigation portlet */
+
+dl.portlet ul.navTree li a {
+    border: none;
+    display: block;
+    zoom: 1;
+}
+
+.icons-off dl.portlet ul.navTree li a:hover {
+    background-color: transparent;
+}
+
+dl.portletNavigationTree dd.portletItem {
+    padding: 0;
+}
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    padding: 0em;
+    margin-bottom: 0;
+    border-bottom: 0.1em solid #000;
+    line-height: 1.5em;
+}
+
+dl.portlet ul.navTreeLevel1 .navTreeItem {
+    padding-left: 0.5em;
+    line-height: 2em;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: transparent;
+    border-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+dl.portlet ul.navTree {
+    border-top: 0.1em solid #000;
+}
+
+.state-published {
+    color: #000!important;
+}
+/* @end */
+
+#portal-footer {
+    background: transparent;
+    font-size: 85%;
+    line-height: 1.5em;
+    margin: 0em auto;
+    padding: 1em 0 0 0;
+}
+
+#portal-footer table.invisible {
+    width: 100%;
+}
+
+#portal-footer table.invisible td {
+    width: 25%;
+     -ms-word-break: break-all;
+         word-break: break-all;
+
+    /* Non standard for webkit */
+         word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    
+}
+
+#portal-footer h1,
+#portal-footer h2,
+#portal-footer h3,
+#portal-footer h4,
+#portal-footer h5,
+#portal-footer h6 {
+    line-height: 1.0em;
+}
+
+

@@ -1,0 +1,106 @@
+.toggleMenu {
+    display:  none;
+    background: #424242;
+    padding: 1.25em;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.patty {
+    border-top: 0.25em solid white;
+    margin-bottom: 0.5em;
+    width: 2.5em;
+}
+.patty:last-child {
+    margin-bottom: 0;
+}
+#portal-responsive-globalnav {
+    list-style: none;
+     *zoom: 1;
+     background:#424242;
+     position: relative;
+     top: 4.2em;
+     right: 0;
+     width: 100%;
+     font-size: 1em;
+}
+#portal-responsive-globalnav:before,
+#portal-responsive-globalnav:after {
+    content: " "; 
+    display: table; 
+}
+#portal-responsive-globalnav:after {
+    clear: both;
+}
+#portal-responsive-globalnav ul {
+    list-style: none;
+    width: 9em;
+}
+#portal-responsive-globalnav a {
+    padding: .75em 1em;
+    color:#fff!important;
+}
+#portal-responsive-globalnav li {
+    position: relative;
+}
+#portal-responsive-globalnav > li {
+    float: left;
+}
+#portal-responsive-globalnav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#portal-responsive-globalnav > li > a {
+    border-top: 1px solid #757575;
+    display: block;
+}
+#portal-responsive-globalnav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+#portal-responsive-globalnav > li.hover > ul {
+    left: 0;
+}
+#portal-responsive-globalnav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+#portal-responsive-globalnav li li a {
+    display: block;
+    background: #5c5c5c;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #949494;
+}
+#portal-responsive-globalnav li li li a {
+    background:#949494;
+    z-index:200;
+    border-top: 1px solid #aaa;
+}
+
+@media screen and (max-width: 40em) {
+    .active {
+        display: block;
+    }
+    #portal-responsive-globalnav > li {
+        float: none;
+    }
+    #portal-responsive-globalnav > li > .parent {
+        background-position: 95% 50%;
+    }
+    #portal-responsive-globalnav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    #portal-responsive-globalnav ul {
+        display: block;
+        width: 100%;
+    }
+   #portal-responsive-globalnav > li.hover > ul , #portal-responsive-globalnav li li.hover ul {
+        position: static;
+    }
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object>
+ <hidden manager="plone.abovecontent" skinname="Plone Classic Theme">
+  <viewlet name="plone.path_bar"/>
+ </hidden>
+ <hidden manager="plone.portalfooter" skinname="Sunburst Theme">
+  <viewlet name="plone.site_actions"/>
+  <viewlet name="plone.colophon"/>
+ </hidden>
+ <hidden manager="plone.portalheader" skinname="Sunburst Theme">
+  <viewlet name="plone.searchbox"/>
+  <viewlet name="plone.personal_bar"/>
+ </hidden>
+ <hidden manager="plone.abovecontent" skinname="Sunburst Theme">
+  <viewlet name="plone.path_bar"/>
+ </hidden>
+</object>

@@ -1,0 +1,5 @@
+<div i18n:domain="plone"
+     id="portal-footer">
+    <div tal:condition="exists:context/footertext"
+         tal:replace="structure context/footertext/text/output | context/footertext/getText">Footertext</div>
+</div>

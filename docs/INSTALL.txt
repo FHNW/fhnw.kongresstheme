@@ -1,0 +1,17 @@
+fhnw.kongresstheme Installation
+-------------------------------
+
+To install fhnw.kongresstheme using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``fhnw.kongresstheme`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        fhnw.kongresstheme
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
